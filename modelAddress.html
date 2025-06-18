@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>静心瑜伽馆 - 项目地址</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+
+            background: linear-gradient(135deg, #e6f7ff 0%, #f0fff0 100%);
+
+            /* 背景选项3：纹理背景 */
+            /* background-color: #f5f5f5;
+            background-image: url('https://www.transparenttextures.com/patterns/soft-wallpaper.png'); */
+
+            /* 背景选项4：瑜伽主题图片背景 */
+            /* background-image: url(/img/background.jpg);background-size: 100%, 100%' no-repeat center center fixed;
+            background-size: cover;
+            position: relative; */
+        }
+
+        /* 如果使用图片背景，添加半透明遮罩提高文字可读性 */
+        /* body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.7);
+            z-index: -1;
+        } */
+
+        header {
+            background-color: rgba(106, 141, 146, 0.9);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            background-color: rgba(90, 124, 128, 0.9);
+            padding: 1rem 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #e0f7fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .address-section {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        h1, h2 {
+            color: #6a8d92;
+            margin-bottom: 1rem;
+        }
+
+        .map-container {
+            height: 400px;
+            margin: 2rem 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+        }
+
+        .contact-info {
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            background-color: rgba(245, 245, 245, 0.7);
+            border-radius: 6px;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        .icon {
+            margin-right: 0.5rem;
+            color: #6a8d92;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.9);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* 添加一些装饰元素 */
+        .yoga-decoration {
+            position: fixed;
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .decoration-1 {
+            top: 10%;
+            left: 5%;
+            font-size: 10rem;
+            transform: rotate(-15deg);
+        }
+
+        .decoration-2 {
+            bottom: 10%;
+            right: 5%;
+            font-size: 8rem;
+            transform: rotate(15deg);
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+
+            .map-container {
+                height: 300px;
+            }
+
+            body {
+                /* 移动设备上使用更简单的背景 */
+                background: #f5f5f5;
+            }
+
+            /* 移动设备上隐藏装饰元素 */
+            .yoga-decoration {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- 瑜伽装饰元素 -->
+<div class="yoga-decoration decoration-1">☸</div>
+<div class="yoga-decoration decoration-2">☯</div>
+
+<header>
+    <div class="logo">静心瑜伽馆</div>
+    <p>寻找内心的平静与身体的和谐</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="classes.html">课程</a></li>
+        <li><a href="teachers.html">导师</a></li>
+        <li><a href="address.html">地址</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="address-section">
+        <h1>我们的位置</h1>
+        <p>欢迎来到静心瑜伽馆，我们位于城市中心的宁静绿洲，交通便利，环境优美。</p>
+
+        <h2>详细地址</h2>
+        <p><span class="icon">📍</span> 北京市朝阳区建国路88号阳光大厦A座15层1503室</p>
+
+        <div class="map-container">
+            <!-- 这里可以嵌入Google地图或其他地图服务的iframe代码 -->
+            <iframe src="https://maps.google.com/maps?q=北京市朝阳区建国路88号阳光大厦&output=embed" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+        <div class="contact-info">
+            <h2>交通指南</h2>
+            <p><span class="icon">🚇</span> 地铁：1号线/10号线国贸站C出口，步行5分钟</p>
+            <p><span class="icon">🚌</span> 公交：1路、4路、9路、特8路国贸站下车</p>
+            <p><span class="icon">🚗</span> 自驾：阳光大厦地下停车场提供充足车位</p>
+        </div>
+
+        <div class="contact-info">
+            <h2>营业时间</h2>
+            <p>周一至周五: 7:00 - 21:00</p>
+            <p>周六至周日: 8:00 - 20:00</p>
+            <p>节假日: 9:00 - 18:00</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 静心瑜伽馆 版权所有</p>
+    <p>京ICP备12345678号</p>
+</footer>
+</body>
+</html>
